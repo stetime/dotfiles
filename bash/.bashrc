@@ -11,6 +11,8 @@ alias vim="nvim"
 PS1='[\u@\h \W]\$ '
 source /usr/share/nvm/init-nvm.sh
 # bun
+HISTSIZE=1000
+HISTFILESIZE=2000
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export TERM="xterm-256color"

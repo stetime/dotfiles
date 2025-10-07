@@ -8,6 +8,7 @@ alias ls='eza -la'
 alias cat='bat'
 alias grep='grep --color=auto'
 alias vim="nvim"
+alias find="fd"
 PS1='[\u@\h \W]\$ '
 source /usr/share/nvm/init-nvm.sh
 # bun

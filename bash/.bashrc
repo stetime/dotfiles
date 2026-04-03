@@ -14,7 +14,7 @@ source /usr/share/nvm/init-nvm.sh
 HISTSIZE=1000
 HISTFILESIZE=2000
 export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$BUN_INSTALL/bin:$HOME/.local/bin:$PATH"
 export TERM="xterm-256color"
 export PAGER="most"
 export EDITOR="nvim"

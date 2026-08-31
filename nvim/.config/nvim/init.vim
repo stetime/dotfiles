@@ -13,3 +13,7 @@ set ttyfast
 set cursorline
 filetype plugin on
 filetype plugin indent on
+call plug#begin()
+Plug 'miikanissi/modus-themes.nvim'
+call plug#end()
+colorscheme modus " modus_operandi, modus_vivendi

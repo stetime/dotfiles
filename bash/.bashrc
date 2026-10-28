@@ -10,9 +10,19 @@ alias grep='grep --color=auto'
 alias vim="nvim"
 alias find="fd"
 source /usr/share/nvm/init-nvm.sh
+# history
+#
+HISTSIZE=100000
+HISTFILESIZE=100000
+HISTFILE=~/.bash_history
+HISTTIMEFORMAT='%F %T  '
+HISTCONTROL=ignoreboth
+HISTIGNORE='ls:ll:la:cd:cd -:pwd:exit:clear:history:fg:bg'
+shopt -s histappend
+shopt -s histverify
+shopt -s cmdhist
+shopt -s lithist
 # bun
-HISTSIZE=1000
-HISTFILESIZE=2000
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$HOME/.local/bin:$PATH"
 export TERM="xterm-256color"
